@@ -1,18 +1,20 @@
 let bikePrice = [ 5329, 4999, 2499, 1999, 3750, 6415 ];
 
-function averagePrices(){
+console.log(`“De gemiddelde prijs voor een fiets bedraagt ${averagePrices(bikePrice)} euro.`);
+
+function averagePrices(prices){
     let gemmiddelde = 0;
 
-    bikePrice.forEach(bikePrice => {
-        gemmiddelde = gemmiddelde + bikePrice;
-    })
+    prices.forEach(prices => {
+        gemmiddelde = gemmiddelde + prices;
+    });
 
     //for (let i = 0; i < bikePrice.length; i++) {
     //    gemmiddelde = gemmiddelde + bikePrice[i];
     //}
 
-    return gemmiddelde / bikePrice.length;
+    return gemmiddelde / prices.length;
 }
 
-console.log(`“De gemiddelde prijs voor een fiets bedraagt ${averagePrices()} euro.`);
+
 
